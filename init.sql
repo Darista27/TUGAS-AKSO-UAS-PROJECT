@@ -1,0 +1,9 @@
+USE exampledb;
+CREATE TABLE IF NOT EXISTS user(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE
+);
+
+INSERT INTO user (name, email) VALUES
+('TUGAS_AKSO', 'DARISTA_YULI@example.com');
